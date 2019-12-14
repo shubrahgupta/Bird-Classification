@@ -5,7 +5,7 @@ import pandas as pd
 import os
 
 #Extract the text file as csv 
-a=pd.read_csv('/home/shubrah/Downloads/new.txt',sep="\t")
+a=pd.read_csv('<location>/new.txt',sep="\t")
 
 a["Diff"]=a["End Time (s)"]-a["Begin Time (s)"]
 #Created a new column for time difference
@@ -13,8 +13,10 @@ a["Diff"]=a["End Time (s)"]-a["Begin Time (s)"]
 b=list(set(a["Notes"]))
 #created a set of all species,no repetition
 
+#create a new folder bird in the home directory
+
 # define the name of the directory to be created
-path1 = "/home/shubrah/bird/"
+path1 = "<location>/bird/"
 
 # define the access rights
 access_rights = 0o755

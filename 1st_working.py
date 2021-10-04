@@ -166,7 +166,7 @@ model.fit_generator(generator=train_generator,
                     epochs=100
 )
 
-#Evaluate GEnerator
+#evaluting thw generator
 model.evaluate_generator(generator=valid_generator)
 
 extract1=['/home/shubrah/bird2/INSECT_6/dcb9f121-78c5-4ac6-b7dc-3baf311434b6.wav',
